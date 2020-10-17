@@ -17,7 +17,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-from flask_sqlalchemy import SQLAlchemy
+from flask-sqlalchemy import SQLAlchemy
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
 # Remove tracking modifications
